@@ -1,108 +1,65 @@
-html.media_queries
+html(xmlns="http://www.w3.org/1999/xhtml")
 
 	head
-		//It is a requirement to support Western European ISO-8859-1 Character Encoding for CheetahMail
-		meta(charset="ISO-8859-1")
-		//The device-width meta content helps certain devices calculate the correct width for the Media Queries
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		// BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #1
-		title=title 
-
+		<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+		<meta content="telephone=no" name="format-detection" />
+		<!--[if !mso]>-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--<![endif]-->
+		title
+		// CSS code
 		include ../../css/header.css	
 
-	+body
-		//MOVABLE INK TRACKING PIXEL
-		+img_top_tracking
+
+	body
+		// MOVABLE INK TRACKING PIXEL 
+		include ../Modules/movableinktrack.html
 		//BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #2
-		+div-location(title)
+		
+		table(cellpadding="0", cellspacing="0", border="0", width="100%", align="center")
+			tr
+				td(valign="top")
 
-		+table_principal
-			//Main Structure Table 612
-			+table_structure_wrap
-				//View In Browser
-				+table 
-					tr
-						+td_view_browser
-							| No images? Please 
-							+anchor_links_menu_desktop(link_view_browser).
-								view 
-							|in your browser for the full experience. 
-					//Main Structure Table: Top framing		
-					tr
-						td
-							+table-set_mobile
-								tr
-									+td_corner_6px('frame_top_left')
-									+td_flex_600
-										+table-set_mobile 
-											+tr_line_600_flex(color_1)
-											+tr_line_600_flex(color_2)
-											+tr_line_600_flex(color_3)
-											+tr_line_600_flex(color_4)
-											+tr_line_600_flex(color_5)
-											+tr_line_600_flex(color_6)
-
-									+td_corner_6px('frame_top_right')		
-					//Main Structure Table: Center framing & main column					
-					tr
-						td		
-							+table-set_mobile 
-								tr
-									+td_line_1_flex(color_1)
-									+td_line_1_flex(color_2)
-									+td_line_1_flex(color_3)
-									+td_line_1_flex(color_4)
-									+td_line_1_flex(color_5)
-									+td_line_1_flex(color_6)
-									//Main Content Column		
-									+main_column
-										// Menu principal TLS
-										include ../comp/_menu_principal
-										// Hero
-										include ../comp/_hero
-
-										// Body content
-
-										include ../comp/_body
-
-										//Menu Footer
-										include ../comp/_menu_footer
-
-										//Footer
-										include ../comp/_footer
-
-									+td_line_1_flex(color_6)
-									+td_line_1_flex(color_5)
-									+td_line_1_flex(color_4)
-									+td_line_1_flex(color_3)
-									+td_line_1_flex(color_2)
-									+td_line_1_flex(color_1)
-
-
-					//Main Structure Table: Bottom framing		
-					tr
-						td
-							+table-set_mobile
-								tr
-									+td_corner_6px('frame_bottom_left')
-									+td_flex_600
-										+table-set_mobile 
-											+tr_line_600_flex(color_6)
-											+tr_line_600_flex(color_5)
-											+tr_line_600_flex(color_4)
-											+tr_line_600_flex(color_3)
-											+tr_line_600_flex(color_2)
-											+tr_line_600_flex(color_1)
-
-									+td_corner_6px('frame_bottom_right')	
-
-					//Lower Content
-					include ../comp/_links_menu
-					//Terms & Conditions
-					include ../comp/_terms_condition
-
-
-
-		include ../../css/footer.css	
-		// TRACKING PIXEL
-		+img_bottom_tracking
+					// PreHeader
+					table(width="640", border="0", align="center", cellpadding="0", cellspacing="0", class="main_table")
+						tr
+							td(align="left", valign="top", style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height:14px; text-align:left; color:#696969; font-weight:200;")
+								Take full advantage of your unlimited NYTimes.com access and enjoy our vast selection of articles, blogs, videos, interactive features and more.
+						// Begin view in browser and hero					
+						include ../Modules/hero.html
+						// Nav 
+						include ../Modules/nav.html
+						// Blocks
+						tr
+							td(bgcolor="#e6e6e6", align="center", valign="top", style="padding:15px;")
+								// Block 1
+								include ../Modules/block_1.html
+								// Block 2
+								include ../Modules/block_2.html
+								// Block 3
+								include ../Modules/block_3.html
+								// Block 4
+								include ../Modules/block_4.html
+								// Block 5
+								include ../Modules/block_5.html
+								// Block 6
+								include ../Modules/block_6.html
+								// Block 7
+								include ../Modules/block_7.html
+								// Block 8
+								include ../Modules/block_8.html
+								table(cellpadding="0", cellspacing="0", border="0", width="100%", align="center")
+									// Block 9
+									include ../Modules/block_9.html
+									// Block 10
+									include ../Modules/block_10.html
+									// Block 11
+									include ../Modules/block_11.html
+									// Block 12
+									include ../Modules/block_12.html
+									// Block social
+									include ../Modules/social.html
+									// Block disclaimer
+									include ../Modules/disclaimer.html

@@ -1,0 +1,378 @@
+include variables
+
+
+mixin img_bottom_tracking
+	IMG(SRC="#{link_pixel_bottom}", BORDER=0, WIDTH=1, HEIGHT=1, ALT="Advertisement")
+
+mixin img_top_tracking
+	<img src="#{link_pixel_top}" width=1 height=1 />
+		
+
+	
+
+mixin td_corner_6px(position)
+	- a = position || 0
+	td(width="6", style="width: 6px; line-height:0px;")
+		img(width="6", height="6", src="#{path_local}_#{a}.gif", style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;")	
+
+mixin td_flex_600
+	td(class="set_mobile_width_100_pct", width="600", style="width: 600px;")		
+		if block
+			block
+
+mixin tr_line_600_flex(color)
+	- b = color
+	tr
+		td.set_mobile_width_100_pct(width="600", height="1", style="width: 600px; background-color:#{b}; line-height:0px;", bgcolor="#{b}")
+			img.set_mobile_width_100_pct(src="#{path_local}_spacer.gif", height="1", style="display: block; border-style: none; border-width: 0px; height: 1px; width: 600px;")
+
+
+mixin td_line_1_flex(color)
+	- c = color
+	td(width="1", style="width: 1px; background-color: #{c};", bgcolor="#{c}")
+		img(width="1", height="100%", src="#{path_local}_spacer.gif", style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;")
+
+mixin td_column_main
+	td.set_mobile_width_100_pct(width="600", style="width: 600px;")
+
+		if block
+			block
+
+
+
+
+// mixin to links menu
+
+mixin table_links
+	table.set_mobile_position_relative(width="100%", cellpadding="0", cellspacing="0", border="0")
+
+		if block
+			block
+
+mixin table_612
+	table.hide_for_mobile.set_mobile_width_100_pct(width="612", border="0", cellpadding="0", cellspacing="0" )		
+
+
+		if block
+			block
+
+mixin td_links_menu_desktop
+	td(style="padding-top: 10px; padding-bottom: 21px; text-align:center;")
+		span(style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #666666; line-height: 14px;")			
+
+			if block
+				block
+
+mixin anchor_links_menu_desktop(link)
+	- d = link
+	a(href="#{d}", style="color:#005eb8;")
+
+		if block
+			block
+
+mixin table_570
+	table.set_mobile_position_relative.set_mobile_width_100_pct(width="570", cellpadding="0", cellspacing="0", border="0")
+
+		if block
+			block
+
+mixin table_links_mobile
+	table.show_for_mobile.mobile.contact_table(cellpadding="0", cellspacing="0", bgcolor="#FFFFFF", border="0", align="center", style="display: none; background-color:#ffffff; width: 0px; height: 0px; overflow: hidden; position: absolute; min-height: 0px; line-height: 0px; font-size: 0px;")		
+
+
+		if block
+			block
+
+
+mixin td_links_mobile
+	td.show_for_mobile_text.headline.mobile(align="center", style="width:0px; max-height:0px; overflow:hidden !important; font-size:0px; line-height:0px; display:none; color:#ffffff;")
+
+		if block
+			block
+
+mixin anchor_links_menu_mobile(link)
+	- e = link
+	a(href="#{e}", style="color:#ffffff;text-decoration:none;")
+
+		if block
+			block
+
+mixin line_links_mobile
+	span(style="font-family:Arial, Helvetica, sans-serif !important; font-size:11px !important;") &nbsp;&nbsp;|&nbsp;&nbsp;		
+
+
+
+mixin line_hr(color,size)
+	-f = color
+	-g = size
+	td(height="#{g}", bgcolor="#{f}", style="font-size: 0px; line-height: 0px; background-color:#{f};")
+		img(src="#{path_local}_spacer.gif", width="100%", height="#{g}", style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;")
+
+
+
+// terms and condition
+
+mixin sign_up_now
+	td.set_mobile_footer_padding(style="padding-top: 20px; padding-bottom: 20px; font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #666666; line-height: 14px; text-align: left;")
+
+		if block
+			block
+
+mixin bolder
+	span(style="font-weight: bold;")
+
+		if block
+			block
+
+mixin tc_titile
+	td.set_mobile_footer_padding(style="padding-top: 12px; padding-bottom: 14px; font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #666666; line-height: 14px; text-align: left; font-weight:bold;")			
+
+		if block
+			block
+
+mixin tc_body
+	td.set_mobile_footer_padding(style="padding-top: 0px; padding-bottom: 11px; font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #666666; line-height: 14px; text-align: left;")
+
+		if block
+			block
+
+mixin tc_footer
+	td.set_mobile_footer_padding(style="padding-top: 12px; padding-bottom: 20px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: #666666; line-height: 14px; text-align: left;")			
+
+		if block
+			block
+
+
+
+// Main principal
+
+mixin main_column(width_table)
+	td.set_mobile_width_100_pct(width=width_table, style="width: #{width_table}px;")
+
+		if block
+			block
+
+
+mixin logo_principal
+	table.hide_for_mobile(width="100%", cellpadding="0", cellspacing="0", border="0", style="background-color: #5e2750;")
+		tr
+			td
+				img(src="#{path_local}_logo_bar.jpg", alt="AMERICAN EXPRESS TRAVEL", width="600", height="68", style="display: block; border: 0 none;")
+
+
+mixin table_background(color)
+	- h = color
+	table(border="0",cellpadding="0",cellspacing="0",width=width||'100%', style="background-color:#{h};")
+
+		if block
+			block
+mixin div_mobile(classes)
+	div(class=classes, style="display: none; width: 0px; height: 0px; overflow: hidden; position: absolute; min-height: 0px; line-height: 0px; font-size: 0px;")
+
+		if block
+			block
+
+mixin table_class_background(color_class)
+	table(class=color_class, width="100%", cellpadding="0", cellspacing="0", border="0")
+
+		if block
+			block
+
+mixin imagen_mobile(classes, name, alt_tex)
+
+	- j = classes || ""
+	- k = path_local + name
+	- l = alt_tex || ""
+	img(class=classes, style="display: none; width: 0px; height: 0px; overflow: hidden; position: absolute; min-height: 0px; line-height: 0px; font-size: 0px;",src=k,alt=l)
+
+
+mixin td_menu_tab(width_tab, class_tab, link_tab, menu_tab )
+
+	td(align="center", width=width_tab,  class=class_tab, style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 14px; padding: 10px 10px 8px 10px; white-space: nowrap; background:#0072bc;")
+		a(href=link_tab, style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; text-decoration: none;font-weight: normal; ",class="text_menu_mobile")=menu_tab
+
+mixin separate_tabs(color, classes)
+	- line_color = color
+	- line_class = classes || ""
+	td(width="1", style="border-left: #ffffff 1px solid;padding-top:8px; padding-bottom:8px;font-size: 0px;", class=line_class)
+		&nbsp;
+
+
+
+
+// mixins to body 
+
+
+mixin space_body_color(hight_s, color_s, class_s, class_i)
+	- hight_s = hight_s
+	- color_s = color_s
+	- class_s = class_s || ''
+	- class_i = class_i || ''
+	+table
+		tr
+			td(class=class_s, bgcolor=color_s, style="line-height: 0px;")
+				img(class=class_i, width="100%", height=hight_s, src="#{path_local}_spacer.gif", style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;")
+
+
+mixin body_parragraph(space_left, space_right, classes, b_color, size_t, size_h, t_color, extra_class, text_align,weight)
+	- b_color = b_color
+	- classes = classes
+	- space_left = space_left
+	- space_right = space_right
+	- size_t = size_t || '13px'
+	- size_h = size_h || '19px'
+	- t_color = t_color || '#707372'
+	- text_align = text_align || 'left'
+	- weight = weight || 'normal'
+
+	+table_background(b_color)
+		tr
+			td(style="width:#{space_left}; font-size: 0px; line-height: 0px;", class="hide_for_mobile" )
+				&nbsp;
+			td(class=classes, style="  text-align:#{text_align}") 
+
+				+table_background(b_color)
+					tr
+						td(class=extra_class, style="font-size: #{size_t}; line-height: #{size_h}; font-family: Arial, Helvetica, sans-serif; color: #{t_color}; background:#{b_color};text-align:#{text_align}; font-weight:#{weight} ")
+
+							if block
+								block
+
+			td(style="width:#{space_right}; font-size: 0px; line-height: 0px;", class="hide_for_mobile")
+				&nbsp;
+
+
+mixin table_break(width,t_align,classes)
+	table(border="0",cellpadding="0",cellspacing="0",width=width||'100%', align=t_align, class=classes|| '')
+
+		if block
+			block
+
+
+mixin td_arrow(text,link,text_link)
+	- text = text
+
+	td( style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; color:#4d4f53; text-align:left; padding-top: 10px; padding-left:0px;")
+		img( src="#{path_local}_arrow.jpg", width="14", height="14",  style="font-family:Arial;font-size:11px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-style: none; border-width: 0px; font-size:10PX;", border="0")
+
+		| #{text}
+
+		+anchor_links_menu_desktop(link)=text_link
+
+
+
+
+
+// mixins menu footer
+
+mixin title_menu_footer(color_bg, classes, font_size, space)
+	- color_bg = color_bg
+	- font_size = font_size
+	- space = space
+
+	+table_background(color_bg)
+		tr
+			td(style="padding-bottom: #{space}; padding-left: 12px; padding-right: 12px; padding-top: #{space}; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: #{font_size}; ", align="center", class=classes)
+				if block
+					block
+
+
+
+mixin tab_menu_footer(classes, color_bg, color_t ,width_size,link, type)
+	- type = type
+	- color_t = color_t
+	table(cellpadding="0", cellspacing="0", border="0", class=classes, width=width_size)
+		tr
+			td(width="44", style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; line-height:14px; color:#4d4f53; padding-left:15px")
+				a(href=link)
+					img(src="#{path_local}_Icon_#{type}.jpg", alt=type, width="44", height="44", style=" font-size:11px;", border="0")
+
+			td(style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:14px; padding-left:2px; font-weight:bold; vertical-align: middle;", class="padding_left_15PX")
+				a(href=link, style="color: #{color_t}; text-decoration:none; font-weight:bold; ")=type
+
+			td(width="20", class="arrow_25px" )
+				+table_background(color_bg)
+					tr
+						td
+							+div_mobile('show_for_mobile ')
+								+table_class_background(background_5e2750)
+									tr
+										td
+											+div_mobile('show_for_mobile background_5e2750')
+								+imagen_mobile('show_for_mobile background_5e2750 set_mobile_width_100_pct','_Icon_Triangule.jpg','')
+					
+
+
+
+
+
+
+mixin td_menu_tab_footer(width_tab, class_tab, link_tab, menu_tab )
+
+	td(width=width_tab, height="20", align="center", class=class_tab, style="vertical-align: middle !important;")
+		a(href=link_tab, style="color: #ffffff; font-family: Arial, sans-serif; font-size: 12px; text-decoration: underline;font-weight: bold;")=menu_tab
+
+
+
+mixin td_title_blue
+	td(style="font-size:14px; color:#455560; line-height:22px; font-weight:bold;font-family: Arial, sans-serif; text-align:left; padding-left:8px;",class="")
+
+		if block
+			block
+
+
+mixin td_paragraph_blue
+	td(style="font-size:14px; color:#455560; line-height:22px; font-family: Arial, sans-serif; text-align:left; padding-top:12px; padding-left:8px;letter-spacing: -0.15px;", class="")
+
+		if block
+			block
+
+mixin td_footer__blue
+	td(style="font-size:14px; color:#005eb8; line-height:18px; font-family: Arial, sans-serif; text-align:left; padding-top:6px; padding-bottom:10px; padding-left:12px;", class="mobile_bottom_20px")
+
+		if block
+			block
+
+mixin strong
+	span(style="font-weight:bold;")
+		if block
+			block
+
+mixin td_title_blue_2
+	td(style="font-size:16px; color:#455560; line-height:18px; font-weight:bold;font-family: Arial, sans-serif; text-align:left; padding-left:20px; padding-top:18px;letter-spacing: -0.2px;",class="mobile_left_zero_2")
+
+		if block
+			block
+
+
+mixin td_paragraph_blue_2
+	td(style="font-size:13px; color:#455560; line-height:18px; font-family: Arial, sans-serif; text-align:left; padding-top:6px; padding-left:20px; ", class="mobile_left_zero_3")
+
+		if block
+			block
+
+
+mixin td_title_blue_3
+	td(style="font-size:16px; color:#455560; line-height:18px; font-weight:bold;font-family: Arial, sans-serif; text-align:left; padding-left:20px; padding-top:8px",class="mobile_left_zero_2")
+
+		if block
+			block
+
+
+mixin td_title_blue_4
+	td(style="font-size:16px; color:#455560; line-height:18px; font-weight:bold;font-family: Arial, sans-serif; text-align:left; padding-left:20px; padding-top:2px; ",class="mobile_left_zero_4 text_mobile_center")
+
+		if block
+			block
+
+
+mixin td_paragraph_blue_4
+	td(style="font-size:13px; color:#455560; line-height:18px; font-family: Arial, sans-serif; text-align:left; padding-top:6px; padding-left:20px;", class="mobile_left_zero_3 text_mobile_center")
+
+		if block
+			block
+
+
+
+
+

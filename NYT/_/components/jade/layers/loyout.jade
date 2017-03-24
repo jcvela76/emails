@@ -1,0 +1,56 @@
+html.media_queries
+
+	head
+		//It is a requirement to support Western European ISO-8859-1 Character Encoding for CheetahMail
+		meta(charset="ISO-8859-1")
+		//The device-width meta content helps certain devices calculate the correct width for the Media Queries
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		// BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #1
+		title=title 
+
+		include ../../css/header.css	
+
+	+body
+	
+		//BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #2
+		+div-location(title)
+
+		+table_principal
+			//Main Structure Table 
+			+table_structure("590")
+				//View In Browser
+				+table 
+	
+					+space_body_color('20','#ffffff')
+					//Main Structure Table: Center framing & main column					
+					tr
+						td		
+							+table-set_mobile 
+								tr
+									//Main Content Column		
+									+main_column(590)
+										// Menu principal TLS
+										include ../comp/_menu_principal
+										// Hero
+										//include ../comp/_hero
+
+										// Body content
+										table(border="0",cellpadding="0",cellspacing="0", style="border-left:solid 1px #e6e8e9;border-bottom:solid 1px #e6e8e9;border-right:solid 1px #e6e8e9;")
+											tr
+												td
+													include ../comp/_body
+
+										table(border="0",cellpadding="0",cellspacing="0",style="border-left:solid 1px #e6e8e9;border-right:solid 1px #e6e8e9;border-bottom:solid 1px #e6e8e9")
+											tr
+												td
+													//Footer
+													include ../comp/_footer
+
+										table(border="0",cellpadding="0",cellspacing="0",style="border-left:solid 1px #e6e8e9;border-right:solid 1px #e6e8e9;border-bottom:solid 1px #e6e8e9")
+											tr
+												td
+													//Terms & Conditions
+													include ../comp/_terms_condition
+
+
+		include ../../css/footer.css	

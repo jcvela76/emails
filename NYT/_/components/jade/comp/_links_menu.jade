@@ -1,0 +1,41 @@
+include ../mixins/links
+//Desktop links
+tr
+	td 
+		+table_links
+			tr
+				td
+					+table_612
+						tr
+							+td_links_menu_desktop
+								+anchor_links_menu_desktop(link_contact) Contact Customer Service
+
+								| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+
+								+anchor_links_menu_desktop(link_view) View Privacy Statement
+
+								| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+
+								+anchor_links_menu_desktop(link_add) Add Us to Your Address Book
+
+								| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+
+								+anchor_links_menu_desktop(link_Uns) Unsubscribe
+
+//Mobile links
+
+tr
+	td.set_mobile_padding_10px(style="padding-left: 20px; padding-right: 10px;")
+		+table_570
+			tr
+				td
+					+table_links_mobile
+						tr
+							+td_links_mobile
+								+anchor_links_menu_mobile(link_contact) Contact Customer Service
+								+line_links_mobile
+								+anchor_links_menu_mobile(link_view) View Privacy Statement
+								br
+								+anchor_links_menu_mobile(link_add) Add Us to Your Address Book
+								+line_links_mobile
+								+anchor_links_menu_mobile(link_Uns) Unsubscribe

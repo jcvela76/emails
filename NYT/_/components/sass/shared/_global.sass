@@ -1,0 +1,127 @@
+// uncomment to enable spriting
+
+
+// @import 'icons/*.png'
+// @include all-icons-sprites
+
+
+// PX TO EM FUNCTION - USE IT EVERYWHERE
+@function em($px, $base: $base-font-size)
+	@return ($px / $base) * 1em
+
+
+// INLINE ICON MIXINS AND CONFIGURATION
+
+$inlineIconPath: 'inline-icons/'
+
+
+=inline-icon($filename)
+	
+	+inline-block
+	+background(inline-image($inlineIconPath + $filename) no-repeat)
+	background-size: image-width($inlineIconPath + $filename) image-height($inlineIconPath + $filename)
+	width: image-width($inlineIconPath + $filename)
+	height: image-height($inlineIconPath + $filename)
+	
+	
+
+// VERTICAL RHYTHM INITIALIZATION
+$base-font-size: 12px
+$base-line-height: 18px
+
+@include establish-baseline
+
+
+$purple: #5e2750
+$lightPurple: #d7cfd5
+$darkBlue: #002663
+$gray: #4d4f53
+$linkBlue: #006890
+$focusBorderBlue: #009bbb
+$errorRed: #c30000
+$teal: #006890
+
+
+
+$sans: arial, helvetica, sans-serif
+
+$BentonSans: BentonSans, $sans // normal
+$BentonSans-Bd: BentonSans-Bd, $sans // bold
+$BentonSans-Bk: BentonSans-Bk, $sans // book
+$BentonSans-Lt: BentonSans-Lt, $sans // light
+$BentonSans-Md: BentonSans-Md, $sans // medium
+
+$experimental-support-for-svg: true
+
+$globalHeaderHeight: 30px
+$hangingBannerHeight: 165px
+$questionWidth: 500px
+$questionWidthEmails: 360px
+
+*, *:before, *:after
+	+box-sizing(border-box)
+
+
+
+html
+	min-height: 100%
+
+body
+	position: relative
+	font-family: $BentonSans
+	min-height: 100%
+	height: auto
+	color: #4d4f53
+
+button
+	border: none
+	padding: 0
+	text-decoration: none
+	+background(none)
+	cursor: pointer
+	outline: none
+
+
+#main
+
+	position: relative
+
+	+background(#fff)
+	width: 100%
+	max-width: 640px
+	min-width: 300px
+	margin: 0px auto
+
+	button, a
+	
+		&:focus
+
+			outline: 1px dashed #ccc
+
+
+.button
+
+	+inline-block
+	width: 290px
+	height: 35px
+	
+	+background(linear-gradient(#002663, #002663))
+	+border-radius(5px)
+	+box-shadow(rgba(0, 0, 0, 0.4) 1px 1px 1px)
+
+	color: #fff
+	font-family: $BentonSans
+	+adjust-font-size-to(14px)
+	line-height: 100%
+	vertical-align: middle
+	&:hover
+
+		+background(#002663)
+		+box-shadow(none)
+
+	.ie8 &
+		+background(#002663)
+		+pie		
+
+
+

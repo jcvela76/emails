@@ -1,0 +1,51 @@
+html.media_queries
+
+	head
+		meta(charset="ISO-8859-1")
+		//The device-width meta content helps certain devices calculate the correct width for the Media Queries
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		// BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #1
+		title=title 
+
+		include ../../css/header.css	
+
+	+body
+	
+		//BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #2
+		+div-location(title)
+
+		+table_principal
+			//Main Structure Table 
+			+table_structure("590")
+				//View In Browser
+				+table 
+					tr
+						+td_view_browser
+							| Multi-Asset Income Fund
+	
+		
+					//Main Structure Table: Center framing & main column					
+					tr
+						td		
+							+table-set_mobile 
+								tr
+									//Main Content Column		
+									+main_column(590)
+										// Menu principal TLS
+										include ../comp/_menu_principal_BU
+
+										// Body content
+
+										include ../comp/_body_BU_4
+
+
+										//Footer
+										include ../comp/_footer
+
+					
+										//Terms & Conditions
+										include ../comp/_terms_condition_BU
+											| USR-7228
+
+
+		include ../../css/footer.css	

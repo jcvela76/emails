@@ -1,0 +1,561 @@
+#wrap_app
+	background: #fff
+
+#benefit_hotel
+	background-image: url('images/diagonal_bk.gif')
+	background-size: 100%
+
+	h1
+		font-size: 1.6em
+		line-height: 100%
+		color: #77216F
+		
+
+	h3
+		float: right
+		font-size: 0.8em
+		line-height: 1.5em
+		color: #4d4f53
+		font-family: $BentonSans-Lt
+
+
+#benefit_air
+	background-image: url('images/diagonal_bk.gif')
+	background-size: 100%
+
+	h1
+		font-size: 1.6em
+		line-height: 100%
+		color: #0099cc
+		
+
+	h3
+		float: right
+		font-size: 0.8em
+		line-height: 1.5em
+		color: #4d4f53
+		font-family: $BentonSans-Lt		
+
+#benefit_transportation
+	background-image: url('images/diagonal_bk.gif')
+	background-size: 100%
+
+	h1
+		font-size: 1.6em
+		line-height: 1.1em
+		color: #002663
+		
+
+	h3
+		float: right
+		font-size: 0.8em
+		line-height: 1.5em
+		color: #4d4f53
+		font-family: $BentonSans-Lt	
+
+.benefits
+	display: none
+#white-bk
+	
+	background-image: url('images/white-bk.png')
+	height: 50px
+	background-repeat: repeat-x
+
+#white-bk-transportation
+	background-image: url('images/white-bk.png')
+	
+	height: 50px
+	background-repeat: repeat-x	
+	@media (max-width: 480px)
+		background-image: url('images/white-bk_trans.png')
+		height: 80px
+
+
+.first-header
+	width: 100%
+	padding-bottom: 10%
+	padding: 15px 5% 0 5%
+.right-part
+	width: 50%
+	float: left
+
+.left-part
+	width: 50%
+	float: left
+	text-align: right
+
+//----Hotel Content
+.hotel-content 
+	background-image: url('images/white-bk_3.png')
+	font-size: 12px
+	line-height: 100%
+	color: #4d4f53
+	font-family: $BentonSans-Lt
+	text-align: left
+	padding: 1.5% 5%
+	clear: both
+
+	.hotel-name
+		font-size: 1em
+		line-height: 0.8em
+		font-family: $BentonSans
+		letter-spacing: 2px
+
+	.hotel-location
+		font-size: 0.8em
+		line-height: 1.8em
+		font-family: $BentonSans
+
+	.hotel-date
+		font-size: 0.8em
+		line-height: 0.8em	
+
+	.air-name
+		font-size: 1em
+		line-height: 1.8em
+		font-family: $BentonSans
+
+	.air-date
+		font-size: 0.8em
+		line-height: 0.8em	
+
+
+.hotel-footer
+	background-image: url('images/white-bk_3.png')
+	height: 15px
+
+
+.offer, .noOffer, .offer-air, .offer-transportation, .noOfferHotel   
+	font-size: 0.8em
+	line-height: 1em
+	color: #77216f
+	text-align: right
+	padding: 1.5% 5% 1% 0%
+	letter-spacing: 1px
+
+
+.cross-air
+	
+	+inline-icon('circle-open-air.png')
+	width: 23px
+	height: 23px
+	margin-top: -3px
+	background-size: 23px 23px
+	cursor: pointer
+
+	.ie8 &
+		+inline-icon('circle-open-air_2.png')
+
+.air-text-color
+	color: #0099cc		
+
+
+.cross-transportation
+	
+	+inline-icon('circle-open-trans.png')
+	width: 23px
+	height: 23px
+	margin-top: -3px
+	background-size: 23px 23px
+	cursor: pointer
+
+	.ie8 &
+		+inline-icon('circle-open-trans_2.png')
+
+.transportation-text-color
+	color: #002663			
+
+
+.cross
+	
+	+inline-icon('circle-open.png')
+	width: 23px
+	height: 23px
+	margin-top: -3px
+	background-size: 23px 23px
+	cursor: pointer
+
+	.ie8 &
+		+inline-icon('circle-open_2.png')		
+
+.close
+	
+	+inline-icon('close-ico.png')
+	width: 23px
+	height: 23px
+	margin-top: -3px
+	background-size: 23px 23px	
+	cursor: pointer
+	.ie8 &
+		+inline-icon('close-ico_2.png')	
+
+.see-offer
+	display: none	
+	cursor: pointer
+
+.close-offer 
+	cursor: pointer	
+
+.total_benefits
+	+inline-icon('circle-benefits.png')
+	width: 23px
+	height: 23px
+	margin-top: -6px
+	background-size: 23px 23px
+	float: right
+	margin-left: 3px
+	text-align: center
+	padding-top: 3px
+	color: #ffffff
+	font-family: $BentonSans-Lt
+
+	.ie8 &
+		+inline-icon('circle-benefits_2.png')
+
+
+
+.total_benefits_air
+	+inline-icon('circle-benefits-air.png')
+	width: 23px
+	height: 23px
+	margin-top: -6px
+	background-size: 23px 23px
+	float: right
+	margin-left: 3px
+	text-align: center
+	padding-top: 3px
+	color: #ffffff
+	font-family: $BentonSans-Lt
+
+	.ie8 &
+		+inline-icon('circle-benefits-air_2.png')
+
+
+
+.total_benefits_transportation
+	+inline-icon('circle-benefits-trans.png')
+	width: 23px
+	height: 23px
+	margin-top: -6px
+	background-size: 23px 23px
+	float: right
+	margin-left: 3px
+	text-align: center
+	padding-top: 3px
+	color: #ffffff
+	font-family: $BentonSans-Lt
+
+	.ie8 &
+		+inline-icon('circle-benefits-trans_2.png')
+
+
+
+.shadon_2
+	width: 100%
+	height: 3px
+	background-image: url('images/shadon_2.png')	
+
+.shadon_3
+	width: 100%
+	height: 3px
+	background-image: url('images/white-bk_4.png')
+
+.header-detail
+	margin-left: -7px
+	margin-top: 22px
+	font-family: $BentonSans
+	font-size: 8px
+	cursor: pointer
+
+
+//----Benefits for hotels Internet
+.benefits-one-hotel
+	margin: 7px 5%
+	
+.header-benefit-internet	
+	background: #ffffff
+	background-image: url('images/ico-internet.png')
+	background-repeat: no-repeat
+	background-size: 60px auto
+	height: 68px
+
+	.ie8 &
+		
+		background-image: url('images/ico-internet_2.png')
+		height: 66px
+
+.header-benefit-internet-header
+
+	float: left
+	width: 70%
+	margin-left: 68px
+	color: #4d4f53
+	font-family: $BentonSans
+	margin-top: 0px
+	font-size: 1.2em
+	@media (max-width: 500px)
+		width: 60%
+		font-size: 1em
+
+
+.content-inter
+	display: table-cell
+	vertical-align: middle
+	height: 68px
+	padding-right: 10px
+
+.header-benefit-ico	
+	+inline-icon('plus-icon.png')
+	margin-top: 26px
+	cursor: pointer
+	float: right
+	margin-right: 0px
+	background-size: 19px 19px	
+
+
+	.ie8 &
+		+inline-icon('plus-icon_2.png')
+		margin-right: 20px
+
+.header-benefit-ico-plus
+	+inline-icon('close-Icon.png')
+	
+	margin-top: 26px
+	cursor: pointer
+	background-size: 19px 19px
+	.ie8 &
+		+inline-icon('close-Icon_2.png')
+		
+
+
+//----Benefits for hotels breackfast
+
+
+.header-benefit-breackfast	
+	background: #ffffff
+	background-image: url('images/ico-breackfast.png')
+	background-repeat: no-repeat
+	background-size: 60px auto
+	height: 68px
+
+	.ie8 &
+		
+		background-image: url('images/ico-breackfast_2.png')
+		height: 66px
+
+.header-benefit-breackfast-header
+
+	float: left
+	width: 70%
+	margin-left: 68px
+	color: #4d4f53
+	font-family: $BentonSans
+	margin-top: 0px
+	font-size: 1.2em
+	@media (max-width: 500px)
+		width: 60%
+		font-size: 1em
+
+
+
+
+//---------------------------------	
+
+
+
+//----Benefits for hotels shuttle
+
+
+.header-benefit-shuttle	
+	background: #ffffff
+	background-image: url('images/ico-shuttle.png')
+	background-repeat: no-repeat
+	background-size: 60px auto
+	height: 68px
+
+	.ie8 &
+		
+		background-image: url('images/ico-shuttle_2.png')
+		height: 66px
+
+.header-benefit-shuttle-header
+
+	float: left
+	width: 70%
+	margin-left: 68px
+	color: #4d4f53
+	font-family: $BentonSans
+	margin-top: 0px
+	font-size: 1.2em
+	@media (max-width: 500px)
+		width: 60%
+		font-size: 1em
+
+
+
+
+
+//---------------------------------	
+
+
+//----Benefits for hotels parking
+
+
+.header-benefit-parking	
+	background: #ffffff
+	background-image: url('images/ico-parking.png')
+	background-repeat: no-repeat
+	background-size: 60px auto
+	height: 68px
+
+	.ie8 &
+		
+		background-image: url('images/ico-parking_2.png')
+		height: 66px
+
+.header-benefit-parking-header
+
+	float: left
+	width: 70%
+	margin-left: 68px
+	color: #4d4f53
+	font-family: $BentonSans
+	margin-top: 0px
+	font-size: 1.2em
+	@media (max-width: 500px)
+		width: 60%
+		font-size: 1em
+
+
+
+
+//---------------------------------	
+
+
+.detail-benefit
+	margin-top: 2px	
+	background: #ffffff
+	padding-bottom: 3%
+	margin-bottom: 15px
+	display: none
+
+.detail-benefit-header
+	padding: 3% 3% 3% 15px
+	font-size: 0.9em
+.detail-benefit-header-blue
+	font-size: 0.95em
+	color: $darkBlue
+	font-family: $BentonSans-Md
+	padding: 0 3% 0 15px
+
+.details-list
+	
+	padding-left: 30px
+
+	ul
+		list-style: disc
+
+		li
+			padding: 0.5% 0
+			font-size: 0.9em
+
+
+//-----------------------------
+
+
+#benefit_no_offer
+	text-align: center
+	padding: 10px 0px
+	display: none
+
+.cont-text-cal 
+	font-family: $BentonSans
+	font-size: 1.05em
+	line-height: 3em	
+
+#no-offer-cont
+	display: none
+
+
+//----------No offer-------------------
+
+.content-no-offer-body
+	background-image: url('images/white-bk_no_offer.png')
+	height: 300px
+	background-repeat: repeat-x
+
+.no-offer-body
+	padding: 23px 20px
+	font-size: 1.7em
+	line-height: 1.4em
+	font-family: $BentonSans
+	color: #4d4f53
+
+strong
+	font-weight: bold
+//----------disclaimer-------------------
+
+#body-disclaimer
+	margin: 1% 5%
+
+	h1
+		color: #4D4F53
+		font-family: $BentonSans
+		font-size: 1.05em
+		line-height: 4em	
+	p
+		color: #4D4F53
+		font-family: $BentonSans
+		font-size: 0.9em
+		padding-bottom: 10px
+
+
+//----------case-------------------
+.body-case
+	margin: 5% 5% 5%
+	height: 50px
+	@media (max-width: 560px)
+		margin: 5% 5% 10%
+
+.body-left 
+	float: left
+	+clearfix
+
+.body-right 
+	float: right
+	+clearfix
+.clear	
+	+clearfix
+
+.icon-case	
+	+inline-icon('icon-case-plane.png')
+	width: 51px
+	height: 42px
+	background-size: 51px 42px
+	margin-top: 0px
+	@media (max-width: 560px)	
+		margin-top: 0px
+
+	.ie8 &
+		+inline-icon('icon-case-plane_2.png')
+
+.icon-case-arrow	
+	+inline-icon('icon-case-arrow.png')
+	width: 10px
+	height: 19px
+	background-size: 10px 19px
+	margin-top: 8px
+	@media (max-width: 560px)	
+		margin-top: 28px	
+
+	.ie8 &
+		+inline-icon('icon-case-arrow_2.png')
+
+
+.body-center
+	width: 440px	
+	padding-left: 15px
+	@media (max-width: 560px)	
+		width: 220px
+		
+

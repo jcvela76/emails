@@ -1,0 +1,50 @@
+// Body tag
+mixin body
+	body(style="width: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;")
+		if block
+			block
+
+// Tabble with size or 100%
+mixin table(width)
+	table(border="0",cellpadding="0",cellspacing="0",width=width||'100%')
+		if block
+			block
+
+// Table flexible
+mixin table-set_mobile
+	table.set_mobile_width_100_pct(border="0",cellpadding="0",cellspacing="0")
+		if block
+			block						
+
+
+mixin div-location(title)
+	.set_outlook_hidden(style="width: 0px; height: 0px; overflow: hidden; position: absolute; min-height: 0px; line-height: 0px; font-size: 0px;")=title
+
+
+mixin table_principal
+	table.test(width="100%", cellpadding="0", cellspacing="0", border="0", bgcolor="#ffffff", align="center", style="margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #555555;")
+		tr
+			td.set_mobile_padding_top_0px(align="center", style="padding-bottom: 20px;")
+				if block
+					block
+
+mixin table_structure_wrap
+	table.set_mobile_width_100_pct(border="0",cellpadding="0",cellspacing="0",width='612')
+		tr
+			td
+				if block
+					block
+
+mixin table_structure(width_struct)
+	table.set_mobile_width_100_pct(border="0",cellpadding="0",cellspacing="0",width=width_struct590)
+		tr
+			td
+				if block
+					block
+
+mixin td_view_browser
+
+	td(style="text-align: left; font-size:10px; line-height:13px; font-family:Arial, Helvetica, sans-serif;padding-left:0px; padding-bottom:6px; padding-top:10px; color:#666666;")
+		if block
+			block				
+			

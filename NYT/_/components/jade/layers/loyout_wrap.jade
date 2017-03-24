@@ -1,0 +1,108 @@
+html.media_queries
+
+	head
+		//It is a requirement to support Western European ISO-8859-1 Character Encoding for CheetahMail
+		meta(charset="ISO-8859-1")
+		//The device-width meta content helps certain devices calculate the correct width for the Media Queries
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		// BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #1
+		title=title 
+
+		include ../../css/header.css	
+
+	+body
+		//MOVABLE INK TRACKING PIXEL
+		+img_top_tracking
+		//BEGIN SUBJECT LINE PREVIEW TEXT LOCATION #2
+		+div-location(title)
+
+		+table_principal
+			//Main Structure Table 612
+			+table_structure_wrap
+				//View In Browser
+				+table 
+					tr
+						+td_view_browser
+							| No images? Please 
+							+anchor_links_menu_desktop(link_view_browser).
+								view 
+							|in your browser for the full experience. 
+					//Main Structure Table: Top framing		
+					tr
+						td
+							+table-set_mobile
+								tr
+									+td_corner_6px('frame_top_left')
+									+td_flex_600
+										+table-set_mobile 
+											+tr_line_600_flex(color_1)
+											+tr_line_600_flex(color_2)
+											+tr_line_600_flex(color_3)
+											+tr_line_600_flex(color_4)
+											+tr_line_600_flex(color_5)
+											+tr_line_600_flex(color_6)
+
+									+td_corner_6px('frame_top_right')		
+					//Main Structure Table: Center framing & main column					
+					tr
+						td		
+							+table-set_mobile 
+								tr
+									+td_line_1_flex(color_1)
+									+td_line_1_flex(color_2)
+									+td_line_1_flex(color_3)
+									+td_line_1_flex(color_4)
+									+td_line_1_flex(color_5)
+									+td_line_1_flex(color_6)
+									//Main Content Column		
+									+main_column
+										// Menu principal TLS
+										include ../comp/_menu_principal
+										// Hero
+										include ../comp/_hero
+
+										// Body content
+
+										include ../comp/_body
+
+										//Menu Footer
+										include ../comp/_menu_footer
+
+										//Footer
+										include ../comp/_footer
+
+									+td_line_1_flex(color_6)
+									+td_line_1_flex(color_5)
+									+td_line_1_flex(color_4)
+									+td_line_1_flex(color_3)
+									+td_line_1_flex(color_2)
+									+td_line_1_flex(color_1)
+
+
+					//Main Structure Table: Bottom framing		
+					tr
+						td
+							+table-set_mobile
+								tr
+									+td_corner_6px('frame_bottom_left')
+									+td_flex_600
+										+table-set_mobile 
+											+tr_line_600_flex(color_6)
+											+tr_line_600_flex(color_5)
+											+tr_line_600_flex(color_4)
+											+tr_line_600_flex(color_3)
+											+tr_line_600_flex(color_2)
+											+tr_line_600_flex(color_1)
+
+									+td_corner_6px('frame_bottom_right')	
+
+					//Lower Content
+					include ../comp/_links_menu
+					//Terms & Conditions
+					include ../comp/_terms_condition
+
+
+
+		include ../../css/footer.css	
+		// TRACKING PIXEL
+		+img_bottom_tracking

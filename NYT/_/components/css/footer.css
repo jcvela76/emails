@@ -1,0 +1,306 @@
+
+body, td, div {
+-webkit-text-size-adjust: none !important; 
+-ms-text-size-adjust: none !important;
+}
+
+table, table td { 
+border-collapse: collapse !important;
+border-spacing: 0px !important;
+}
+
+.ReadMsgBody { 
+width: 100% !important; 
+}
+
+.ExternalClass { 
+width: 100% !important;
+}
+
+.ExternalClass sup img[alt*=symbol],
+.ExternalClass sup img[class^=Emoji] { 
+width: 9px !important;
+line-height: 0 !important;
+vertical-align: top !important;
+}
+
+.ExternalClass img[alt*=symbol],
+.ExternalClass img[class^=Emoji] { 
+width: 9px !important;
+}
+
+@media only screen and (max-width: 590px) {
+/*template 4*/
+html[class=media_queries] .mobile_badge_body_4 {
+		content: url('images/Template_004_body_M.jpg');
+		width: 100% !important;
+	}
+html[class=media_queries] .mobile_font_10px {
+		font-size: 10px !important;
+		line-height: 12px !important;
+	}
+/*template 3*/
+
+html[class=media_queries] .mobile_badge_gif {
+		content: url('images/Template_003_animation_M.gif');
+		width: 100% !important;
+	}
+
+
+/*template 2*/
+html[class=media_queries] .mobile_icon_1 {
+		content: url('images/Template_002_Icon_1_M.jpg');
+		width: 100% !important;
+	}
+html[class=media_queries] .mobile_nunmer_1 {
+		content: url('images/Template_002_Number_1_M.jpg');
+		width: 100% !important;
+	}
+html[class=media_queries] .mobile_font_18px {
+		font-size: 18px !important;
+		line-height: 22px !important;
+	}
+html[class=media_queries] .cta_version_2 {
+		content: url('images/Template_002_CTA_green.jpg');
+		width: 126px !important;
+		height: auto !important;
+		margin: 0 auto !important; 
+	}	
+
+
+html[class=media_queries] .mobile_icon_2 {
+		content: url('images/Template_002_Icon_2_M.jpg');
+		width: 100% !important;
+	}
+html[class=media_queries] .mobile_nunmer_2 {
+		content: url('images/Template_002_Number_2_M.jpg');
+		width: 100% !important;
+	}
+
+
+html[class=media_queries] .mobile_icon_3 {
+		content: url('images/Template_002_Icon_3_M.jpg');
+		width: 100% !important;
+	}
+html[class=media_queries] .mobile_nunmer_3 {
+		content: url('images/Template_002_Number_3_M.jpg');
+		width: 100% !important;
+	}	
+html[class=media_queries] .mobile_center {
+		
+		margin: 0 auto !important;
+	}	
+html[class=media_queries] .text_mobile_center {
+		
+		text-align: center !important;
+	}	
+
+/*template general*/
+
+html[class=media_queries] .text_menu_mobile {
+	font-size: 9px!important;
+
+}
+html[class=media_queries] .space_20 {
+	height: 20px !important;
+}
+html[class=media_queries] .space_30 {
+	height: 30px !important;
+}
+html[class=media_queries] .mobile_top_11px {
+	padding-top: 11px !important;
+}
+
+html[class=media_queries] .mobile_bottom_20px {
+	padding-bottom: 20px !important;
+	padding-top: 0px !important;
+}
+
+html[class=media_queries] .align-left {
+	text-align: left !important;
+}
+
+html[class=media_queries] .mobile_left_zero {
+	padding-left: 0px !important;
+}
+html[class=media_queries] .mobile_left_zero_2 {
+	padding-left: 0px !important;
+	padding-right: 10px !important;
+}
+html[class=media_queries] .mobile_left_zero_3 {
+	padding-left: 0px !important;
+	padding-right: 10px !important;
+	padding-bottom: 25px !important;
+}
+html[class=media_queries] .mobile_left_zero_4 {
+	padding-left: 0px !important;
+	padding-right: 10px !important;
+	padding-top: 18px !important;
+}
+html[class=media_queries] .set_padding_20px {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+html[class=media_queries] .set_padding_0px {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+html[class=media_queries] .mobile_badge_video {
+		content: url('images/Template_001_Video_M.jpg');
+		width: 100% !important;
+	}
+
+html[class=media_queries] .mobile_badge_footer {
+		content: url('images/Template_001_Footer_logo_M.jpg');
+		width: 100% !important;
+	}
+
+html[class=media_queries] .mobile_badge_header {
+		content: url('images/Template_001_Header_M.jpg');
+		width: 100% !important;
+	}
+
+html[class=media_queries] .mobile_badge_movable {
+		content: url('images/Template_001_Numbers_M.jpg');
+		width: 280px;
+	}
+
+
+
+
+html[class=media_queries] .set_mobile_width_100_pct {
+	width: 100% !important;
+}		
+
+html[class=media_queries] .set_mobile_width_50_pct {
+	width: 50% !important;
+}
+html[class=media_queries] .block_mobile {
+         display:block !important;
+        }	
+	
+html[class=media_queries] .height-40px{
+         padding-top: 8px !important;
+         padding-bottom: 8px !important;
+        }	
+
+html[class=media_queries] .set_mobile_image_module_100_pct {
+width: 100% !important;
+height: auto !important;
+}
+
+html[class=media_queries] .show_for_mobile {
+display: block !important; /* Visually Hidden */
+width: auto !important; /* Visually Hidden */
+height: auto !important; /* Visually Hidden */
+overflow: hidden !important; /* Visually Hidden */
+position: static !important; /* Visually Hidden */
+max-height:inherit !important;
+line-height: 0px !important; /* Outlook */
+font-size: 0px !important; /* Outlook */
+margin: 0 !important;
+padding:0 !important;
+}
+
+html[class=media_queries] .show_for_mobile_mobile_book {
+display: block !important; /* Visually Hidden */
+width: 83px !important; /* Visually Hidden */
+height: auto !important; /* Visually Hidden */
+overflow: hidden !important; /* Visually Hidden */
+position: static !important; /* Visually Hidden */
+max-height:inherit !important;
+line-height: 0px !important; /* Outlook */
+font-size: 0px !important; /* Outlook */
+margin: 0 !important;
+padding:0 !important;
+}
+
+
+
+
+html[class=media_queries] .hide_for_mobile {
+display: none !important; /* Visually Hidden */
+width: 0px !important; /* Visually Hidden */
+height: 0px !important; /* Visually Hidden */
+overflow: hidden !important; /* Visually Hidden */
+position: absolute !important; /* Visually Hidden */
+min-height: 0px !important; /* Gmail */
+line-height: 0px !important; /* Outlook */
+font-size: 0px !important; /* Outlook */
+}
+
+
+
+html[class=media_queries] .set_mobile_hero_100 {
+width: 100% !important;
+height: auto !important;
+}
+
+
+html[class=media_queries] .set_mobile_text_align_left {
+text-align: left !important;
+}
+
+html[class=media_queries] .set_mobile_line_break {
+display: block !important;
+}
+
+html[class=media_queries] .set_mobile_flexi_table img {
+width: 90% !important;
+height: auto !important;
+margin: 0 auto !important;
+}
+
+html[class=media_queries] { 
+display: table !important;
+/*width: 100% !important;*/
+border: solid 1px transparent !important;
+}
+}
+
+@media only screen and (max-width: 580px) {
+.remove_divider {
+display:none;
+}
+
+}
+
+@media (max-width: 440px) {
+
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 2) and (max-width: 320px),
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 918px),
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1224px) {
+
+
+}
+
+@media (orientation: portrait) {
+html[class=media_queries] .test {
+padding-bottom: 1px !important;
+}
+}
+
+@media (orientation: landscape) {
+html[class=media_queries] .test {
+padding-bottom: 0px !important;
+}
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 2) and (max-width: 320px) {
+html[class=media_queries] .set_iphone_480 {
+width: 340px !important;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.tab_hide {
+display:none;
+}
+
+
+
+}

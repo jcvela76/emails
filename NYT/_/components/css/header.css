@@ -1,0 +1,16 @@
+/* Toggle display property in Outlook. */
+
+.set_outlook_hidden {
+display: none !important;
+}
+a img
+{
+    border: 0 none !important;
+}
+.ExternalClass * { line-height: 100%; }
+.ExternalClass { width: 100%; }
+
+strong{font-weight: bold !important;}
+
+.appleLinksBlack a {color: #707372 !important; text-decoration: none !important;}
+.appleLinksBlack .gt .ii a {color: #707372 !important; text-decoration: none !important;}
